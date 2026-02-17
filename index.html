@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهوية البصرية - جمعية رؤية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #B24686;
+            --secondary: #2B556F;
+            --accent: #5898B1;
+        }
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background: #fcfafc;
+            min-height: 100vh;
+            color: #1e3a4c;
+            overflow-x: hidden;
+        }
+        .font-main {
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
+        .font-square {
+            font-family: 'Readex Pro', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .header-modern {
+            background: linear-gradient(135deg, #2B556F 0%, #3d7a9e 50%, #B24686 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 10s ease infinite;
+            box-shadow: 0 20px 40px -15px rgba(43, 85, 111, 0.3);
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .title-glow {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Improved 3D effect for cleaner modern look */
+        .text-3d-modern {
+            color: #FFFFFF;
+            letter-spacing: -0.02em;
+            text-shadow: 
+                0 1px 0 #1e3a4c,
+                0 2px 0 #1e3a4c,
+                0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .copy-active {
+            transform: scale(0.98);
+            transition: transform 0.1s ease;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
